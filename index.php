@@ -9,17 +9,11 @@ punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con quest
    $partita3 = ["Reyer", "-Pallacanestro Varese", " 30-30"],
    $partita4 = ["Dinamo", "-Pallacanestro Brescia", " 60-45"]
  ];
- // foreach ($arr as $elem) {
- //   echo $elem;
- // }
+
  echo count($arr);
  echo "<br>";
  for ($i=0; $i < count($arr); $i++) {
    $elem = $arr[$i];
    echo $elem[$i];
-   // $elem = $arr[$i];
-   // $elem2 = $elem[$i];
-   // $elem3 = $elem2[i];
-   // echo ($elem3);
  }
 ?>
