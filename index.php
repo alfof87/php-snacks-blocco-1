@@ -13,7 +13,7 @@ punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con quest
  ];
 
  for ($i=0; $i < count($arr); $i++) {
-   $elem = $arr[$i][0] . " " . "vS" . " " . $arr[$i][1] . " ---> " . "risultato:" . $arr[$i][2];
+   $elem = $arr[$i][0] . " " . "VS" . " " . $arr[$i][1] . " ---> " . "risultato:" . $arr[$i][2];
    echo $elem;
    echo "<br>";
  }
@@ -59,7 +59,7 @@ for ($i=0; $i < 15; $i++) {
   // echo $CasualNumber = rand(1, 100) . " " . "<br>";
   $CasualNumber = rand(1, 100);
   echo $CasualNumber = rand(1, 100) . " " . "<br>";
-  
+
   if ($array[i] !== $CasualNumber) {
     array_push($array, $CasualNumber);
   }
