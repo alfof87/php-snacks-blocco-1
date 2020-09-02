@@ -3,6 +3,8 @@ Creiamo un array contenente le partite di basket di un'ipotetica tappa del calen
 Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e
 punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema. -->
 <?php
+  echo "-----------------------Snack 1--------------------------------------";
+  echo "<br>";
  $arr = [
    ["Olimpia Milano", "Virtus Bologna", " 55-60"],
    ["Cantù", "Fortitudo Bologna", " 55-15"],
@@ -16,12 +18,15 @@ punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con quest
    echo "<br>";
  }
 ?>
+
 <!-- Snack 2
 Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione)
 che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero.
 Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
  -->
 <?php
+  echo "-----------------------Snack 2--------------------------------------";
+  echo "<br>";
   $name = $_GET["name"];
   $mail = $_GET["mail"];
   $age = $_GET["age"];
@@ -35,10 +40,22 @@ Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
   $ageNum = is_numeric($age);
 
   if ($nameLength > 3 && $mailDot !== false && $mailAt !== false && $ageNum == true) {
-    echo "Accesso riuscito."
+    echo "Accesso riuscito.";
   }
   else {
-    echo "Accesso NON riuscito."
+    echo "Accesso NON riuscito.";
   }
 
+?>
+<!-- Snack 4
+Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere
+lo stesso numero più di una volta -->
+<?php
+echo "<br>";
+echo "-----------------------Snack 3--------------------------------------";
+echo "<br>";
+$CasualNumber = rand(1, 100);
+for ($i=0; $i < 15; $i++) {
+  echo $CasualNumber;
+}
 ?>
