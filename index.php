@@ -54,8 +54,15 @@ lo stesso numero più di una volta -->
 echo "<br>";
 echo "-----------------------Snack 3--------------------------------------";
 echo "<br>";
-$CasualNumber = rand(1, 100);
+$array = [];
 for ($i=0; $i < 15; $i++) {
-  echo $CasualNumber;
-}
+  // echo $CasualNumber = rand(1, 100) . " " . "<br>";
+  $CasualNumber = rand(1, 100);
+  echo $CasualNumber = rand(1, 100) . " " . "<br>";
+  
+  if ($array[i] !== $CasualNumber) {
+    array_push($array, $CasualNumber);
+  }
+ }
+ echo $array[$i];
 ?>
